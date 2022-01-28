@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OrioM_Sens_Pill</defName>
+    <label>Sensory Mechanite Pill</label>
+    <description>A pill which induces a mutated strain of semi-coherent mechanites which reside in the nervous system. They enhance the victim's senses, but also cause intense pain.</description>
+    <descriptionHyperlinks><HediffDef>SensoryMechanites</HediffDef></descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/pill</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>18</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SensoryMechanites</hediffDef> <!--Apply Sensory Mechanites hediff -->
+          <severity>0.25</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>2</Neutroamine>
+	  <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+    <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OrioM_Fib_Pill</defName>
+    <label>Fibrous Mechanite Pill</label>
+    <description>A pill which induces a mutated strain of semi-coherent mechanites which develop fibrous links in muscle tissue. They enhance the victim's strength, but also cause intense pain.</description>
+    <descriptionHyperlinks><HediffDef>FibrousMechanites</HediffDef></descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/pill</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>18</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FibrousMechanites</hediffDef>  <!--Apply Fibrous Mechanite hediff -->
+          <severity>0.25</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>2</Neutroamine>
+	  <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  </Defs>

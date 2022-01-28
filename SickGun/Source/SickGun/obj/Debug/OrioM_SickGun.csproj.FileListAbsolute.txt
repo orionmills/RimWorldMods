@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SickGun\Assemblies\SickGun.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SickGun\Source\SickGun\obj\Debug\OrioM_SickGun.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SickGun\Source\SickGun\obj\Debug\SickGun.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SickGun\Source\SickGun\obj\Debug\OrioM_SickGun.csproj.AssemblyReference.cache

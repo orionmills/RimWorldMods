@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseBullet"> 
+    <defName>OrioM_Bullet_PlagueGun</defName>
+	<thingClass>OrioM_SickGun.Projectile_PlagueBullet</thingClass> <!--Projectile_SickBullet.cs -->
+    <label>Plague Dart</label>
+    <graphicData>
+      <texPath>Things/Projectile/DartSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+	<modExtensions>
+		<li Class="OrioM_SickGun.ModExtension_SickBullet">  <!--55% chance to apply plague hediff -->
+			<addHediffChance>0.55</addHediffChance>
+			<hediffToAdd>Plague</hediffToAdd>
+		</li>
+	</modExtensions>
+  </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+    <defName>OrioM_Bullet_PunjiGun</defName>
+	<thingClass>OrioM_SickGun.Projectile_PunjiBullet</thingClass> <!--Projectile_SickBullet.cs -->
+    <label>Punji Dart</label>
+    <graphicData>
+      <texPath>Things/Projectile/DartSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+	<modExtensions>
+		<li Class="OrioM_SickGun.ModExtension_SickBullet"> <!--55% chance to apply infection hediff -->
+			<addHediffChance>0.55</addHediffChance>
+			<hediffToAdd>WoundInfection</hediffToAdd>
+		</li>
+	</modExtensions>
+  </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+    <defName>OrioM_Bullet_FluGun</defName>
+	<thingClass>OrioM_SickGun.Projectile_FluBullet</thingClass> <!--Projectile_SickBullet.cs -->
+    <label>Flu Dart</label>
+    <graphicData>
+      <texPath>Things/Projectile/DartSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+	<modExtensions>
+		<li Class="OrioM_SickGun.ModExtension_SickBullet"> <!--55% chance to apply flu hediff -->
+			<addHediffChance>0.55</addHediffChance>
+			<hediffToAdd>Flu</hediffToAdd>
+		</li>
+	</modExtensions>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>OrioM_PlagueGun</defName>
+    <label>Plague Gun</label>
+    <description>A dart gun that inflicts deadly plague on the the target.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/PlagueGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OrioM_Bullet_PlagueGun</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>35</range>
+        <soundCast>OrioM_Shot_Dartgun</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+      <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>OrioM_PunjiGun</defName>
+    <label>Punji Gun</label>
+    <description>A dart gun that inflicts bacterial infection on the the target.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/PunjiGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OrioM_Bullet_PunjiGun</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>35</range>
+        <soundCast>OrioM_Shot_Dartgun</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+      <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>OrioM_FluGun</defName>
+    <label>Flu Gun</label>
+    <description>A dart gun that inflicts deadly flu on the the target.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/FluGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OrioM_Bullet_FluGun</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>35</range>
+        <soundCast>OrioM_Shot_Dartgun</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>

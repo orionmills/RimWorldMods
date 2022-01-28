@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Sick Gun</name>
+  <author>orioM</author>
+  <packageId>orioM.SickGun</packageId> 
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <description>Adds a set of dart guns that can inflict Plague, Flu, or Infection on the target.</description>
+</ModMetaData>

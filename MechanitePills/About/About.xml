@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Mechanite Pills</name>
+  <author>orioM</author>
+  <packageId>orioM.MechanitePills</packageId> 
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <description>Adds pills that induce mutated Sensory or Fibrous mechanites in the host. These are mechanite diseases that cannot be outright cured, but provide enhanced physical abilities in addition to painful side effects.</description>
+</ModMetaData>

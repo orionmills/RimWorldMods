@@ -1,0 +1,2 @@
+This mod adds a dart gun to the game which has a chance to apply an illness or disease to the target.
+Adds a new weapon with unique texture, sound, and projectile. 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<OrioM_SickBullet_FailureMote>Failure</OrioM_SickBullet_FailureMote>
+	<OrioM_PlagueBullet_SuccessMessage>{0} inflicted Plague on {1}!</OrioM_PlagueBullet_SuccessMessage>
+	<OrioM_PunjiBullet_SuccessMessage>{0} inflicted Infection on {1}!</OrioM_PunjiBullet_SuccessMessage>
+	<OrioM_FluBullet_SuccessMessage>{0} inflicted Flu on {1}!</OrioM_FluBullet_SuccessMessage>
+</LanguageData>
