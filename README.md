@@ -16,3 +16,7 @@ Includes 2 mechanite pills can be crafted at a drug lab with 2 components and 2 
 Mechanite dieases can not be cured and must go away on their own, but the pain and severity can be decreased with high quality medicine and a skilled doctor.  
 ![Sensory Mechanite Pills](MechanitePills/senspillpreview.gif)
 ![Fibrous Mechanite Pills](MechanitePills/fibrpillpreview.gif)
+___
+![Denture Fix](DentureFix/About/Preview.png)  
+This mod fixes a small bug in vanilla where installing dentures causes the pawn to also lose their tongue, causing an unintended -15 "Disfigured" social debuff. This happens because the tongue is considered 'part' of the jaw, so when the jaw is removed, the tongue is removed too, but the dentures do not provide a replacement tongue. This mod changes how dentures are added so the tongue is preserved.   
+Also incudes a patch for the popular mod FSF Vanilla Bionics Expansion, providing the same fix for bionic and archotech jaws. Be sure to place Denture Fix below FSF Bionics in the mod load order.
