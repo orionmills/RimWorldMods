@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Denture fix</name>
+  <author>orioM</author>
+  <packageId>orioM.DentureFix</packageId> 
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <description>A small patch to fix pawns with dentures losing their tongues and becoming disfigured. Also includes a patch for the popular mod FSF Vanilla Bionics Expansion to fix bionic and archotech jaws. PLACE BELOW FSF BIONICS IN MOD LOAD ORDER.</description>
+</ModMetaData>
