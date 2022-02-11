@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Primitive Smelting</name>
+  <author>orioM</author>
+  <packageId>orioM.PrimSmelt</packageId> 
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <description>Primitive smelting</description>
+</ModMetaData>

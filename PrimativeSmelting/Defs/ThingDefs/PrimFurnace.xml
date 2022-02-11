@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+	<defName>PrimitiveSmelter</defName>
+	<label>primitive smelter</label>
+	<description>Uses heat and stone tools to slowly and crudely extract a small amount of useful metal from slag chunks.</description>
+	<thingClass>Building_WorkTable</thingClass>
+	<graphicData>
+		<texPath>Things/Misc/PrimFurnace/PrimFurnace</texPath> <!--contains alpha channel-->
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawRotated>false</drawRotated>
+		<allowFlip>false</allowFlip>
+		<damageData>
+			<rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+	<uiIconPath>Things/Misc/PrimFurnace/PrimFurnace</uiIconPath>
+	<altitudeLayer>Building</altitudeLayer>
+	<designationCategory>Misc</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+	<tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+	<fillPercent>0.20</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount> <!-- any stone -->
+    <selectable>true</selectable>
+    <costList>
+      <WoodLog>20</WoodLog>      <!-- just the intial wood -->
+    </costList>
+	<hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	<recipes>
+	  <li>ReducedExtractMetalFromSlag</li>
+	  <li>DestroyWeapon</li>
+      <li>DestroyApparel</li>
+	</recipes>
+	<inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>8.0</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+        <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+	  <li Class="CompProperties_HeatPusher"> <!--heat pusher comp instead of heat pusher benchbase parent -->
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>11</heatPerSecond>
+      </li>
+      <li Class="CompProperties_FireOverlay"> <!-- always shown while fueled -->
+        <fireSize>1</fireSize>
+        <offset>(0,0,0.35)</offset>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>
