@@ -20,3 +20,7 @@ ___
 ![Denture Fix](DentureFix/About/Preview.png)  
 This mod fixes a small bug in vanilla where installing dentures causes the pawn to also lose their tongue, causing an unintended -15 "Disfigured" social debuff. This happens because the tongue is considered 'part' of the jaw, so when the jaw is removed, the tongue is removed too, but the dentures do not provide a replacement tongue. This mod changes how dentures are added so the tongue is preserved.   
 Also incudes a patch for the popular mod FSF Vanilla Bionics Expansion, providing the same fix for bionic and archotech jaws. Be sure to place Denture Fix below FSF Bionics in the mod load order.
+___
+![Primitive Smelting](PrimativeSmelting/About/Preview.png)  
+**Adds a very wasteful and slow method of smelting steel slag that is available regardless of research level.**  
+Provides a very early way to get steel, intended for maps with zero resources, such as sea ice or propane lakes (Alpha Biomes), where the only source of steel is space debris.    Since vanilla smelting requires a research bench made of steel, it can be impossible to complete the initial research. Primitive smelting takes three times as long, and yields 1/3 of the steel produced by normal smelters, but it's better than nothing.  
