@@ -37,6 +37,7 @@
       <Neutroamine>2</Neutroamine>
 	  <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
+	<tradeability>None</tradeability>
     <comps>
       <li Class="CompProperties_Drug">
         <listOrder>1000</listOrder>
@@ -80,6 +81,7 @@
       <Neutroamine>2</Neutroamine>
 	  <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
+	<tradeability>None</tradeability>
     <comps>
       <li Class="CompProperties_Drug">
         <listOrder>1000</listOrder>
