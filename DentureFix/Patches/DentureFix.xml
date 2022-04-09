@@ -8,18 +8,6 @@
 					<hediffClass>Hediff_Implant</hediffClass>
 				</value>
 			</li>
-			<li Class="PatchOperationInsert" MayRequire="FrozenSnowFox.VanillaBionicsExpansion">
-				<xpath>/Defs/HediffDef[defName="FSFBionicJaw"]/addedPartProps</xpath>
-				<value>
-					<hediffClass>Hediff_Implant</hediffClass>
-				</value>
-			</li>
-			<li Class="PatchOperationInsert" MayRequire="FrozenSnowFox.VanillaBionicsExpansion">
-				<xpath>/Defs/HediffDef[defName="FSFArchotechJaw"]/addedPartProps</xpath>
-				<value>
-					<hediffClass>Hediff_Implant</hediffClass>
-				</value>
-			</li>
 		</operations>
 	</Operation>
 </Patch>
