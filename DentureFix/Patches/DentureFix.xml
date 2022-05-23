@@ -2,8 +2,8 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationInsert">
-				<xpath>/Defs/HediffDef[defName="Denture"]/addedPartProps</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="Denture"]</xpath>
 				<value>
 					<hediffClass>Hediff_Implant</hediffClass>
 				</value>

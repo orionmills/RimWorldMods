@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveDenture</defName>
+    <label>remove denture</label>
+    <description>Remove the denture.</description>
+    <jobString>Removing denture.</jobString>
+    <removesHediff>Denture</removesHediff>
+  </RecipeDef>
+</Defs>
