@@ -13,6 +13,11 @@ ___
 This mod fixes a small bug in vanilla where installing dentures causes the pawn to also lose their tongue, causing an unintended -15 "Disfigured" social debuff. This happens because the tongue is considered 'part' of the jaw, so when the jaw is removed, the tongue is removed too, but the dentures do not provide a replacement tongue. This mod changes how dentures are added so the tongue is preserved.   
 Also incudes a patch for the popular mod FSF Vanilla Bionics Expansion, providing the same fix for bionic and archotech jaws. Be sure to place Denture Fix below FSF Bionics in the mod load order.
 ___
+![Swarm shell IED](SwarmIED/About/Preview.png)  
+Adds the ability to turn Swarm shell mortars from Android Tiers into IED traps.  
+Requires [Android Tiers](https://github.com/Atla55/Android-Tiers-Core)  
+![Swarm IED](SwarmIED/About/gifpreview.gif)
+___
 ![Sick Guns Bacterial Warfare](SickGun/About/Preview.png)  
 **Adds a set of dart guns that can inflict Plague, Flu, or Infection on the target.**  
 Includes 3 new guns with unique dart gun texture, sound, and projectile.  
