@@ -16,7 +16,7 @@ This mod fixes a small bug in vanilla where installing dentures causes the pawn 
 Also incudes a patch for the popular mod FSF Vanilla Bionics Expansion, providing the same fix for bionic and archotech jaws. Be sure to place Denture Fix below FSF Bionics in the mod load order.
 ___
 ![Swarm shell IED](SwarmIED/About/Preview.png)  
-Versions: 1.3
+Versions: 1.3  
 **This mod has been merged into the main [Android Tiers 1.4](https://github.com/RWDevathon/Android-Tiers-Reforged/) rework!**  
 Adds the ability to turn Swarm shell mortars from Android Tiers into IED traps.  
 Requires [Android Tiers](https://github.com/Atla55/Android-Tiers-Core)  
